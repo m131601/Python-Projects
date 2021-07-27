@@ -7,7 +7,7 @@
 #           while producing a functional game.
 #
 #           Remember, function_name(variable)_means that we pass in the variable.
-#           return variable _means that we are returning the variable to
+#           return variable _means that it will be returning the variable to
 #           back to the calling function.
 
 
