@@ -1,17 +1,14 @@
 
 
 
-class User:
-    #Define the attribute of the class
-    name = 'No Name Provided'
-    email = ' '
-    password = '1234abcd'
-    account_number = 0
+import tkinter as tk
+from tkinter import filedialog as fd 
 
-class Employee(User): #child class
-    base_pay = 11.00
-    department = 'General'
-
-class Customer(User): #child class
-    mailing_address = ' '
-    mailing_list = True
+def callback():
+    name= fd.askopenfilename() 
+    print(name)
+    
+errmsg = 'Error!'
+tk.Button(text='Click to Open File', 
+       command=callback).pack(fill=tk.X)
+tk.mainloop()
